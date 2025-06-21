@@ -34,12 +34,12 @@ I used the same component multiple times with different data:
 
 📁 Folder Structure
 
-
+```text
 
 Day01_Props/
 ├── Welcome.js
 ├── README.md
-
+```
 
 🗂️ Git Commit
 
