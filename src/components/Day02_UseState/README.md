@@ -80,7 +80,7 @@ git push origin main
 
 🔗 Navigation
 
-🟡 This is part of my [30-Day React Training Plan](../../../../.github/profile-progress.md)
+🟡 This is part of my [30-Day React Training Plan](../../../.github/profile-progress.md)
 
 
 
