@@ -56,4 +56,4 @@ git commit -m "Day 1: Created Welcome component using props"
 
 🔗 Navigation
 
-🟡 This is part of my [30-Day React Training Plan](../../../../.github/profile-progress.md)
+🟡 This is part of my [30-Day React Training Plan](../../../.github/profile-progress.md)
