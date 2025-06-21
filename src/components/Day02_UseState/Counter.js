@@ -19,7 +19,8 @@ export default function Counter()
     }
     return (
         <div>
-            <h1>{count}</h1>
+             <h2>Event Handler</h2>
+            <h3>{count}</h3>
             <button onClick={incrementFunc}>+</button>
             <button onClick={decrementFunc} disabled={count === 0}>-</button>
             <p>{like}</p>
