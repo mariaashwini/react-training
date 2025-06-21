@@ -1,8 +1,8 @@
 import './App.css';
-import Welcome from './Welcome.js';
-import Counter from './Counter.js';
-import NameForm from './NameForm.js';
-import Tabs from './Tabs.js';
+import Welcome from './components/Day01_Props/Welcome.js';
+import Counter from './components/Day02_UseState/Counter.js';
+import NameForm from './components/Day02_UseState/NameForm.js';
+import Tabs from './components/Day02_UseState/Tabs.js';
 
 
 function App() {
