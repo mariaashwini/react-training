@@ -12,6 +12,7 @@ export default function Tabs(){
 
     return (
         <div>
+          <h2>Tab Switching</h2>
             <div>
                 {Object.keys(tabContent).map((tab) => (
                     <TabComponent key={tab} label={tab} onClick={setActiveTab} isActive={tab===activeTab}/>
