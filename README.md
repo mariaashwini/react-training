@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# 🎓 React Training – 30 Days of Hands-On Learning
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my **React Training Repository**, where I document and build projects while learning React from scratch. This repo is a reflection of my daily progress, code practice, and applied understanding of core React concepts.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📅 30-Day React Training Plan
 
-### `npm start`
+Each day focuses on a specific concept with hands-on demos, small projects, and learning summaries. The goal is to gain practical experience while building a strong foundation in React.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+| Day | Topic                        | Status       | Key Demos                      |
+|-----|-----------------------------|---------------|--------------------------------|
+| 1   | Intro to React              | ✅ Done       | Hello World, JSX, Components   |
+| 2   | `useState`                  | ✅ Done       | Counter, Tabs, Form            |
+| 3   | `useEffect`                 | ✅ Done       | Weather App, Digital Clock     |
+| 4   | Composition,Props Drilling  |                |                                |
+|     |   & Conditional Rendering   | 🔜 Upcoming   | Reusable Card, Toggle View     |
+| 5   | React Router Basics         | 🔜            | Route setup, Params, 404       |
+| ... | ...                         | ...            | ...                            |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+➡️ *Full training plan in [`profile-progress.md`](./.github/profile-progress.md)*
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🧠 Learning Goals
 
-### `npm run build`
+- Understand core concepts: components, props, state, effects
+- Build reusable, modular UI components
+- Apply logic through conditional rendering and props drilling
+- Connect React apps with real APIs
+- Structure large projects and organize folders cleanly
+- Prepare for job-ready interviews in React development
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 Folder Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```text
+react-training/
+├── Day01_Props/
+├── Day02_useState/
+├── Day03_useEffect/
+├── Day04_Composition/
+├── Day05_Blog/
+├── Day05_ReactRouterDOM/
+├── README.md
+└── .github/
+    └── profile-progress.md
 
-### `npm run eject`
+Each folder contains:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Daily demos (*.js)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Shared components (if any)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- A local README for explanation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Assets like images and CSS
 
-## Learn More
+🚀 How to Run
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Clone this repo
+git clone https://github.com/your-username/react-training.git
 
-### Code Splitting
+# Navigate to the project
+cd react-training
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Install dependencies
+npm install
 
-### Analyzing the Bundle Size
+# Start the development server
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🧾 Commit Style
 
-### Making a Progressive Web App
+```bash
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+git commit -m "Day 3: useEffect demos – weather API & digital clock"
+```
+I commit each day's work with clear, descriptive messages.
 
-### Advanced Configuration
+🔗 Connect with Me
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+💼 [LinkedIn](https://linkedin.com/in/maria-ashwini)
 
-### Deployment
+📧 Email: mariaashwini06@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+💻 Portfolio: [Coming Soon]
 
-### `npm run build` fails to minify
+📌 Notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This training project is part of my upskilling journey to transition into a React.js Developer role. With 4.4 years of experience in software development and fresh React knowledge, I'm targeting job-ready skills and practical mastery.
+
+
