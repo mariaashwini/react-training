@@ -46,6 +46,7 @@ react-training/
 ├── README.md
 └── .github/
     └── profile-progress.md
+```    
 
 Each folder contains:
 
