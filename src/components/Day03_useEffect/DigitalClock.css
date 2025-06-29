@@ -1,0 +1,60 @@
+.outer-layout {
+  background: #000;
+  width: 600px;
+  height: 300px;
+  margin: auto;
+}
+.inner-layout {
+  width: 500px;
+  height: 200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.time-unit {
+  background-color: #1e1e1e;
+  color: #fff;
+  width: 150px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+}
+.icon-button {
+  width: 160px;
+  height: 145px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: fixed;
+  transition: background-image 0.1s;
+}
+
+.icon-wrapper {
+  cursor: pointer;
+  display: inline-block;
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 66px;
+  height: 57px;
+}
+.pause {
+  background-image: url("./images/pause.png");
+}
+.play {
+  background-image: url("./images/play.png");
+}
+.iconControls {
+  width: 66px;
+  height: 57px;
+  object-fit: contain;
+  display: block;
+}
