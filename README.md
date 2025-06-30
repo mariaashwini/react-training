@@ -1,5 +1,7 @@
 # 🎓 React Training – 30 Days of Hands-On Learning
 
+🔗 **Live Demo:** [Click here to view](https://mariaashwini.github.io/react-training/)
+
 Welcome to my **React Training Repository**, where I document and build projects while learning React from scratch. This repo is a reflection of my daily progress, code practice, and applied understanding of core React concepts.
 
 ---
