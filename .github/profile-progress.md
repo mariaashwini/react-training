@@ -3,6 +3,7 @@
 ## 🌱 Goal
 To become job-ready for a ₹1L+/month React.js developer role in 30 days.
 
+## 🔗 Live Demos [Click here to view](https://mariaashwini.github.io/react-training/)
 ---
 
 ## 📅 Daily Progress
@@ -21,17 +22,24 @@ To become job-ready for a ₹1L+/month React.js developer role in 30 days.
 - Used useEffect to log to console and fetch data
 - Built a UserList component
 
+### ✅ Day 4 – Composition, Props Drilling & Conditional Rendering
+- Built TeamDashboard Component
+- Composition using layout slots (header, footer, main content)
+- Props drilling to send data from parent → child → grandchild
+- Conditional rendering for displaying popup only on member click
+
+
+### ✅ Day 5 –  React Router DOM v6
+- Built Blog Component
+- Learned nested routes
+- Extracting dynamic URL segments
+- Structuring nested and wildcard routes for scalable navigation.  
 ---
 
 ## 🧠 Key Learnings
 - Declarative thinking in React
 - Writing modular components
 - Clean Git commit practices
-
----
-
-## 🔗 Live Demos
-
 
 ---
 
