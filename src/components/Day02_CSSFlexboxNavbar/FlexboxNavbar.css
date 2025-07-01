@@ -1,0 +1,50 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 2rem;
+}
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: large;
+  transition: color 0.3s ease;
+  margin-left: 20px;
+}
+nav a:focus {
+  outline: 2px solid #ffcc00;
+  outline-offset: 2px;
+}
+nav a:hover {
+  color: #ffcc00;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navbar {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+  nav a:focus {
+    outline: none;
+    outline-offset: 0;
+  }
+}
