@@ -4,15 +4,22 @@ import "./App.css";
 import Welcome from "./components/Day01_Props/Welcome.js";
 import Day02DemoSelector from "./components/Day02_UseState/Day02DemoSelector.js";
 import Day03DemoSelector from "./components/Day03_UseEffect/Day03DemoSelector.js";
-import { DashboardLayout, TeamList, TeamMember } from "./components/Day04_TeamDashboard";
+import {
+  DashboardLayout,
+  TeamList
+} from "./components/Day04_TeamDashboard";
 import teamData from "./components/Day04_TeamDashboard/data/teamData";
-import AppRouterDemo from "./components/Day05_ReactRouterDOM/AppRouterDemo.js";
 import BlogApp from "./components/Day05_Blog/BlogApp.js";
+import Card from "./components/Day01_CSSBoxModel/Card";
+
+import DailyDemoLayout from "./components/DailyDemoLayout/DailyDemoLayout";
+import FlexboxNavbar from "./components/Day02_CSSFlexboxNavbar/FlexboxNavbar.js";
 
 export default function App() {
-  const [activeDemo, setActiveDemo] = useState("Day01");
+  const [activeReactDemo, setActiveReactDemo] = useState("Day01");
+  const [activeCssDemo, setActiveCssDemo] = useState("Day01_CSS");
 
-  const demoMap = {
+  const reactDemoMap = {
     Day01: (
       <div>
         <h2>Day 1: Props</h2>
@@ -21,7 +28,7 @@ export default function App() {
       </div>
     ),
     Day02: <Day02DemoSelector />,
-    Day03:<Day03DemoSelector />,
+    Day03: <Day03DemoSelector />,
     Day04: (
       <DashboardLayout
         header="Team Dashboard"
@@ -30,42 +37,52 @@ export default function App() {
         <TeamList data={teamData} />
       </DashboardLayout>
     ),
-    Day05: <AppRouterDemo />,
     Day05_Blog: <BlogApp />,
   };
 
+  const cssDemoMap = {
+    Day01_CSS: (
+      <div>
+        <h2>Day 1: CSS - Card Component</h2>
+        <Card name="Maria Ashwini" role="Frontend Developer" email="mariaashwini06@gmail.com" avatar="https://i.pravatar.cc/150?img=5" status="active"/>
+      </div>
+    ),
+    Day02_CSS: (
+      <div>
+        <h2>Day 2: CSS - Flexbox Navigation Bar Component</h2>
+        <FlexboxNavbar/>
+      </div>
+    ),
+  };
+
+  const getReactTitle = (key) =>
+    ({
+      Day01: "Props",
+      Day02: "useState Demos",
+      Day03: "useEffect Demos",
+      Day04: "Composition and Props Drilling",
+      Day05_Blog: "Blog Task - React Router",
+    }[key] || "Demo");
+
+  const getCssTitle = (key) =>
+    ({
+      Day01_CSS: "CSS – Card Box Model",
+      Day02_CSS: "CSS – Flexbox Navbar",
+    }[key] || "CSS Demo");
+
   return (
-    <div className="App" >
-      <h1>React Daily Demos</h1>
-
-      <label>Select Day:</label>
-      <select
-        onChange={(e) => setActiveDemo(e.target.value)}
-        value={activeDemo}
-      >
-        {Object.keys(demoMap).map((dayKey) => (
-          <option key={dayKey} value={dayKey}>
-            {dayKey}: {getDayTitle(dayKey)}
-          </option>
-        ))}
-      </select>
-
-      <div style={{ marginTop: "30px" }}>{demoMap[activeDemo]}</div>
+    <div className="App">
+      <h1 style={{marginbottom: '20px'}}>30-Day React & CSS Training</h1>
+      <DailyDemoLayout
+        reactDemoMap={reactDemoMap}
+        cssDemoMap={cssDemoMap}
+        activeReactDemo={activeReactDemo}
+        setActiveReactDemo={setActiveReactDemo}
+        activeCssDemo={activeCssDemo}
+        setActiveCssDemo={setActiveCssDemo}
+        getReactTitle={getReactTitle}
+        getCssTitle={getCssTitle}
+      />
     </div>
   );
-}
-
-// Optional: Define readable titles for each day
-function getDayTitle(dayKey) {
-  const titles = {
-    Day01: "Props",
-    Day02: "useState Demos",
-    Day03: "useEffect Demos",
-    Day04: "Composition and Props Drilling",
-    Day05: "React Router DOM",
-    Day05_Blog: "Blog Task - React Router"
-
-    // add more days here
-  };
-  return titles[dayKey] || "Demo";
 }
