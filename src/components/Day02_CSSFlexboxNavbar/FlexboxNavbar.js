@@ -3,7 +3,7 @@ export default function FlexboxNavbar() {
   return (
     <div className="navbar">
       <div className="logo">My logo</div>
-      <nav>
+      <nav class="flexbox-nav">
         <ul className="menu">
           <li>
             <a href="#">Home</a>
