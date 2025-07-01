@@ -1,13 +1,23 @@
 import { useState } from "react";
-export default function NameForm()
-{
+import "./NameForm.css";
 
-    const [user,setUser] = useState('');
-    return (
-        <>
-        <h2>Controlled Form Input</h2>
-        <input type="text" id="name" value={user} onChange={(e) => setUser(e.target.value)}/>
-        <h1>Hello, {user || 'stranger'}</h1>
-        </>
-    );
+export default function NameForm() {
+  const [user, setUser] = useState("");
+
+  return (
+    <div className="form-container">
+      <h2>📝 Controlled Form Input</h2>
+
+      <label htmlFor="name">Enter your name:</label>
+      <input
+        type="text"
+        id="name"
+        value={user}
+        placeholder="Type your name..."
+        onChange={(e) => setUser(e.target.value)}
+      />
+
+      <h3>Hello, {user || "stranger"} 👋</h3>
+    </div>
+  );
 }
