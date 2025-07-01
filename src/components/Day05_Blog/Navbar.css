@@ -1,0 +1,35 @@
+.navbar-blog {
+  background-color: #333;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #555;
+}
+
+.nav-link.active {
+  background-color: #4caf50;
+  font-weight: bold;
+}
