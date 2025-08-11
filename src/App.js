@@ -4,12 +4,11 @@ import "./App.css";
 import Welcome from "./components/Day01_Props/Welcome.js";
 import Day02DemoSelector from "./components/Day02_UseState/Day02DemoSelector.js";
 import Day03DemoSelector from "./components/Day03_UseEffect/Day03DemoSelector.js";
-import {
-  DashboardLayout,
-  TeamList
-} from "./components/Day04_TeamDashboard";
+import { DashboardLayout, TeamList } from "./components/Day04_TeamDashboard";
 import teamData from "./components/Day04_TeamDashboard/data/teamData";
 import BlogApp from "./components/Day05_Blog/BlogApp.js";
+import ContextApp from "./components/Day06_UseContext/ContextApp.js";
+
 import Card from "./components/Day01_CSSBoxModel/Card";
 
 import DailyDemoLayout from "./components/DailyDemoLayout/DailyDemoLayout";
@@ -23,8 +22,8 @@ export default function App() {
     Day01: (
       <div>
         <h2>Day 1: Props</h2>
+        <Welcome />
         <Welcome name="Maria" />
-        <Welcome name="Ashwini" />
       </div>
     ),
     Day02: <Day02DemoSelector />,
@@ -38,19 +37,27 @@ export default function App() {
       </DashboardLayout>
     ),
     Day05_Blog: <BlogApp />,
+    Day06: <ContextApp />
+
   };
 
   const cssDemoMap = {
     Day01_CSS: (
       <div>
         <h2>Day 1: CSS - Card Component</h2>
-        <Card name="Maria Ashwini" role="Frontend Developer" email="mariaashwini06@gmail.com" avatar="https://i.pravatar.cc/150?img=5" status="active"/>
+        <Card
+          name="Maria Ashwini"
+          role="Frontend Developer"
+          email="mariaashwini06@gmail.com"
+          avatar="https://i.pravatar.cc/150?img=5"
+          status="active"
+        />
       </div>
     ),
     Day02_CSS: (
       <div>
         <h2>Day 2: CSS - Flexbox Navigation Bar Component</h2>
-        <FlexboxNavbar/>
+        <FlexboxNavbar />
       </div>
     ),
   };
@@ -62,6 +69,8 @@ export default function App() {
       Day03: "useEffect Demos",
       Day04: "Composition and Props Drilling",
       Day05_Blog: "Blog Task - React Router",
+      Day06: "useContext - React Authentication"
+
     }[key] || "Demo");
 
   const getCssTitle = (key) =>
@@ -72,7 +81,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1 style={{marginbottom: '20px'}}>30-Day React & CSS Training</h1>
+      <h1 style={{ marginbottom: "20px" }}>30-Day React & CSS Training</h1>
       <DailyDemoLayout
         reactDemoMap={reactDemoMap}
         cssDemoMap={cssDemoMap}
