@@ -37,7 +37,7 @@ export default function App() {
       </DashboardLayout>
     ),
     Day05_Blog: <BlogApp />,
-    Day06: <ContextApp />
+    Day06: <ContextApp />,
 
   };
 
@@ -69,7 +69,7 @@ export default function App() {
       Day03: "useEffect Demos",
       Day04: "Composition and Props Drilling",
       Day05_Blog: "Blog Task - React Router",
-      Day06: "useContext - React Authentication"
+      Day06: "useContext - React Authentication",
 
     }[key] || "Demo");
 
