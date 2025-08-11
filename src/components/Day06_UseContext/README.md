@@ -7,7 +7,7 @@ Implement global state management in React using **Context API** and `useContext
 
 ## 🧩 What I Built
 
-### ✅ 1. Auth Context for Login & Logout  
+### ✅ 1. Auth Context for Login & Logout functionality
 Created `AuthContext.js` with:
 - **State**: `user` – stores logged-in user data (persisted in `localStorage`).
 - **login()** – saves user data to state + `localStorage`.
