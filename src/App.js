@@ -14,12 +14,7 @@ import Card from "./components/Day01_CSSBoxModel/Card";
 
 import DailyDemoLayout from "./components/DailyDemoLayout/DailyDemoLayout";
 import FlexboxNavbar from "./components/Day02_CSSFlexboxNavbar/FlexboxNavbar.js";
-// import DebouncedSearch from "./components/Day08_UseCallback/DebouncedSearch.js";
-// import ProductList from "./components/Day08_UseCallbackWithMemo/ProductList.js";
-// import Day09DemoSelector from "./components/Day09_CustomHooks/Day09DemoSelector.js";
-// import JobForm from "./components/Day11_Formik_JobForm/JobForm.js";
-// import RegistrationForm from "./components/Day12_Formik+Yup_RegisterForm/RegistrationForm.js";
-// import Counter from "./components/Day13_ReactRedux/Counter.js";
+import DebouncedSearch from "./components/Day08_UseCallback/DebouncedSearch.js";
 
 export default function App() {
   const [activeReactDemo, setActiveReactDemo] = useState("Day01");
@@ -46,12 +41,7 @@ export default function App() {
     Day05_Blog: <BlogApp />,
     Day06: <ContextApp />,
     Day07: <ContactFormRef />,
-    // Day08: <DebouncedSearch />,
-    // Day08_MemoWithCallback: <ProductList/>,
-    // Day09: <Day09DemoSelector />,
-    // Day11: <JobForm/>,
-    // Day12: <RegistrationForm/>,
-    // Day13: <Counter/>
+    Day08: <DebouncedSearch />
 
   };
 
@@ -85,13 +75,7 @@ export default function App() {
       Day05_Blog: "Blog Task - React Router",
       Day06: "useContext - React Authentication",
       Day07: "useRef - Contact form with UseRef",
-      // Day08: "useCallback - Search Debounce with UseCallback",
-      // Day08_MemoWithCallback: "useCallback With Memo - Favorite button with Stable Handler",
-      // Day09: "Custom Hooks",
-      // Day11: "Formik Job Form",
-      // Day12: "Formik + Yup Validation",
-      // Day13: "React Redux"
-
+      Day08: "useCallback - Search Debounce with UseCallback",
     }[key] || "Demo");
 
   const getCssTitle = (key) =>
