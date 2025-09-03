@@ -7,6 +7,7 @@ Build and practice state management in React using **Redux Toolkit** to:
 ✅ Manage global state for counter and user profile.
 ✅ Share state between components without props drilling.
 ✅ Learn reducers, actions, and the Redux store setup.
+
 ---
 
 ## 🧩 What I Built  
