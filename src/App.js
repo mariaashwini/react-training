@@ -70,7 +70,9 @@ export default function App() {
     Day11: <JobForm />,
     Day12: <RegistrationForm />,
     Day13: <Counter />,
-    Day14: <AppRouter />
+    Day14: <AppRouter />,
+    Day15: <SearchWithTransition />,
+    
   };
 
   const cssDemoMap = {
@@ -110,7 +112,8 @@ export default function App() {
       Day11: "Formik Job Form",
       Day12: "Formik + Yup Validation",
       Day13: "React Redux",
-      Day14: "React Lazy Loading with Recharts"
+      Day14: "React Lazy Loading with Recharts",
+      Day15: "Search Filter with Start Transition",
     }[key] || "Demo");
 
   const getCssTitle = (key) =>
