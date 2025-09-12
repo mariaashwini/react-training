@@ -15,10 +15,27 @@ import Card from "./components/Day01_CSSBoxModel/Card";
 import DailyDemoLayout from "./components/DailyDemoLayout/DailyDemoLayout";
 import FlexboxNavbar from "./components/Day02_CSSFlexboxNavbar/FlexboxNavbar.js";
 import DebouncedSearch from "./components/Day08_UseCallback/DebouncedSearch.js";
+import AppRouter from "./components/Day14_LazyLoadCharts/AppRouter.js";
 import ProductList from "./components/Day08_UseCallbackWithMemo/ProductList.js";
 import Day09DemoSelector from "./components/Day09_CustomHooks/Day09DemoSelector.js";
 import JobForm from "./components/Day11_Formik_JobForm/JobForm.js";
 import RegistrationForm from "./components/Day12_Formik+Yup_RegisterForm/RegistrationForm.js";
+import Counter from "./components/Day13_ReactRedux/Counter.js";
+import SearchWithTransition from "./components/Day15_StartTransition/SearchWithTransition.js";
+import TodoApp from "./components/Day16_UseReducer/TodoApp.js";
+import ChatBox from "./components/Day17_UseLayoutEffect/ChatBox.js";
+import SearchList from "./components/Day18_UseDeferredValue/SearchList.js";
+import Form from "./components/Day19_UseId/Form.js";
+import AppUseImperativeHandle from "./components/Day20_UseImperativeHandle/AppUseImperativeHandle.js";
+import withAuth from "./components/Day21_HOC_ProtectedDashboard/withAuth.js";
+import Dashboard from "./components/Day21_HOC_ProtectedDashboard/Dashboard.js";
+import AppLifeCycleDemo from "./components/Day22_LifeCycleDemo/AppLifeCycleDemo.js";
+import AppReactPortal from "./components/Day23_ReactPortals_Modal/AppReactPortal.js";
+import Demo from "./components/Day24_SyntheticEvents/Demo.js";
+import AppReactQuery from "./components/Day26_ReactQuery/AppReactQuery.js";
+import AppErrorBoundary from "./components/Day25_ErrorBoundary/AppErrorBoundary.js";
+import ReduxApp from "./components/Day27_ReactReduxExample/ReduxApp.js";
+import ThunkApp from "./components/Day28_ReduxThunk_ToDo/ThunkApp.js";
 
 const ProtectedDashboard = withAuth(Dashboard);
 
@@ -51,7 +68,9 @@ export default function App() {
     Day08_MemoWithCallback: <ProductList />,
     Day09: <Day09DemoSelector />,
     Day11: <JobForm />,
-    Day12: <RegistrationForm />
+    Day12: <RegistrationForm />,
+    Day13: <Counter />,
+    Day14: <AppRouter />
   };
 
   const cssDemoMap = {
@@ -89,7 +108,9 @@ export default function App() {
         "useCallback With Memo - Favorite button with Stable Handler",
       Day09: "Custom Hooks",
       Day11: "Formik Job Form",
-      Day12: "Formik + Yup Validation"
+      Day12: "Formik + Yup Validation",
+      Day13: "React Redux",
+      Day14: "React Lazy Loading with Recharts"
     }[key] || "Demo");
 
   const getCssTitle = (key) =>
