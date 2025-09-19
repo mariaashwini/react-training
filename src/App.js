@@ -23,19 +23,7 @@ import RegistrationForm from "./components/Day12_Formik+Yup_RegisterForm/Registr
 import Counter from "./components/Day13_ReactRedux/Counter.js";
 import SearchWithTransition from "./components/Day15_StartTransition/SearchWithTransition.js";
 import TodoApp from "./components/Day16_UseReducer/TodoApp.js";
-import ChatBox from "./components/Day17_UseLayoutEffect/ChatBox.js";
-import SearchList from "./components/Day18_UseDeferredValue/SearchList.js";
-import Form from "./components/Day19_UseId/Form.js";
-import AppUseImperativeHandle from "./components/Day20_UseImperativeHandle/AppUseImperativeHandle.js";
-import withAuth from "./components/Day21_HOC_ProtectedDashboard/withAuth.js";
-import Dashboard from "./components/Day21_HOC_ProtectedDashboard/Dashboard.js";
-import AppLifeCycleDemo from "./components/Day22_LifeCycleDemo/AppLifeCycleDemo.js";
-import AppReactPortal from "./components/Day23_ReactPortals_Modal/AppReactPortal.js";
-import Demo from "./components/Day24_SyntheticEvents/Demo.js";
-import AppReactQuery from "./components/Day26_ReactQuery/AppReactQuery.js";
-import AppErrorBoundary from "./components/Day25_ErrorBoundary/AppErrorBoundary.js";
-import ReduxApp from "./components/Day27_ReactReduxExample/ReduxApp.js";
-import ThunkApp from "./components/Day28_ReduxThunk_ToDo/ThunkApp.js";
+
 
 const ProtectedDashboard = withAuth(Dashboard);
 
@@ -72,7 +60,8 @@ export default function App() {
     Day13: <Counter />,
     Day14: <AppRouter />,
     Day15: <SearchWithTransition />,
-    
+    Day16: <TodoApp/>,
+    Day17: <ChatBox/>
   };
 
   const cssDemoMap = {
@@ -96,6 +85,7 @@ export default function App() {
     ),
   };
 
+
   const getReactTitle = (key) =>
     ({
       Day01: "Props",
@@ -106,14 +96,15 @@ export default function App() {
       Day06: "useContext - React Authentication",
       Day07: "useRef - Contact form with UseRef",
       Day08: "useCallback - Search Debounce with UseCallback",
-      Day08_MemoWithCallback:
-        "useCallback With Memo - Favorite button with Stable Handler",
+      Day08_MemoWithCallback: "useCallback With Memo - Favorite button with Stable Handler",
       Day09: "Custom Hooks",
       Day11: "Formik Job Form",
       Day12: "Formik + Yup Validation",
       Day13: "React Redux",
       Day14: "React Lazy Loading with Recharts",
       Day15: "Search Filter with Start Transition",
+      Day16: "UseReducer using Todo App",
+      Day17: "ChatBox component where new messages auto-scroll to the bottom."
     }[key] || "Demo");
 
   const getCssTitle = (key) =>
@@ -121,6 +112,9 @@ export default function App() {
       Day01_CSS: "CSS – Card Box Model",
       Day02_CSS: "CSS – Flexbox Navbar",
     }[key] || "CSS Demo");
+
+  
+
 
   return (
     <div className="App">
@@ -134,6 +128,7 @@ export default function App() {
         setActiveCssDemo={setActiveCssDemo}
         getReactTitle={getReactTitle}
         getCssTitle={getCssTitle}
+
       />
     </div>
   );
